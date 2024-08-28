@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E36F78A2C7F830400E970BF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E36F7892C7F830400E970BF /* Product.swift */; };
 		3E4449B02C7E342F006E9180 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4449AF2C7E342F006E9180 /* AppDelegate.swift */; };
 		3E4449B22C7E342F006E9180 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4449B12C7E342F006E9180 /* SceneDelegate.swift */; };
-		3E4449B42C7E342F006E9180 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4449B32C7E342F006E9180 /* ViewController.swift */; };
 		3E4449B72C7E342F006E9180 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3E4449B62C7E342F006E9180 /* Base */; };
 		3E4449BA2C7E342F006E9180 /* MVVMxDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E4449B82C7E342F006E9180 /* MVVMxDemo.xcdatamodeld */; };
 		3E4449BC2C7E3430006E9180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E4449BB2C7E3430006E9180 /* Assets.xcassets */; };
@@ -17,6 +17,7 @@
 		3E4449CA2C7E3431006E9180 /* MVVMxDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4449C92C7E3431006E9180 /* MVVMxDemoTests.swift */; };
 		3E4449D42C7E3431006E9180 /* MVVMxDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4449D32C7E3431006E9180 /* MVVMxDemoUITests.swift */; };
 		3E4449D62C7E3431006E9180 /* MVVMxDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4449D52C7E3431006E9180 /* MVVMxDemoUITestsLaunchTests.swift */; };
+		3E4449F12C7E4039006E9180 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4449F02C7E4039006E9180 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E36F7892C7F830400E970BF /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		3E4449AC2C7E342F006E9180 /* MVVMxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4449AF2C7E342F006E9180 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E4449B12C7E342F006E9180 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3E4449B32C7E342F006E9180 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3E4449B62C7E342F006E9180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E4449B92C7E342F006E9180 /* MVVMxDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVVMxDemo.xcdatamodel; sourceTree = "<group>"; };
 		3E4449BB2C7E3430006E9180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		3E4449CF2C7E3431006E9180 /* MVVMxDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMxDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4449D32C7E3431006E9180 /* MVVMxDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMxDemoUITests.swift; sourceTree = "<group>"; };
 		3E4449D52C7E3431006E9180 /* MVVMxDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMxDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3E4449F02C7E4039006E9180 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E36F7862C7F82E500E970BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E36F7892C7F830400E970BF /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E36F7872C7F82EB00E970BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E36F7882C7F82EF00E970BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		3E4449A32C7E342F006E9180 = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +125,15 @@
 		3E4449AE2C7E342F006E9180 /* MVVMxDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3E4449AF2C7E342F006E9180 /* AppDelegate.swift */,
-				3E4449B12C7E342F006E9180 /* SceneDelegate.swift */,
-				3E4449B32C7E342F006E9180 /* ViewController.swift */,
-				3E4449B52C7E342F006E9180 /* Main.storyboard */,
-				3E4449BB2C7E3430006E9180 /* Assets.xcassets */,
-				3E4449BD2C7E3430006E9180 /* LaunchScreen.storyboard */,
+				3E4449E22C7E3C5C006E9180 /* Application */,
+				3E4449E92C7E3CDE006E9180 /* LocalDB */,
+				3E4449E32C7E3C6B006E9180 /* Constant */,
+				3E4449E42C7E3C75006E9180 /* Extensions */,
+				3E4449E52C7E3C84006E9180 /* Helper */,
+				3E4449E62C7E3C93006E9180 /* Screens */,
+				3E4449E72C7E3CA6006E9180 /* Storyboard */,
+				3E4449E82C7E3CC4006E9180 /* Resource */,
 				3E4449C02C7E3430006E9180 /* Info.plist */,
-				3E4449B82C7E342F006E9180 /* MVVMxDemo.xcdatamodeld */,
 			);
 			path = MVVMxDemo;
 			sourceTree = "<group>";
@@ -128,6 +153,80 @@
 				3E4449D52C7E3431006E9180 /* MVVMxDemoUITestsLaunchTests.swift */,
 			);
 			path = MVVMxDemoUITests;
+			sourceTree = "<group>";
+		};
+		3E4449E22C7E3C5C006E9180 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3E4449AF2C7E342F006E9180 /* AppDelegate.swift */,
+				3E4449B12C7E342F006E9180 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3E4449E32C7E3C6B006E9180 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		3E4449E42C7E3C75006E9180 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3E4449E52C7E3C84006E9180 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3E4449F02C7E4039006E9180 /* APIManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3E4449E62C7E3C93006E9180 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3E4449EA2C7E3D18006E9180 /* Product */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3E4449E72C7E3CA6006E9180 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3E4449B52C7E342F006E9180 /* Main.storyboard */,
+				3E4449BD2C7E3430006E9180 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3E4449E82C7E3CC4006E9180 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3E4449BB2C7E3430006E9180 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3E4449E92C7E3CDE006E9180 /* LocalDB */ = {
+			isa = PBXGroup;
+			children = (
+				3E4449B82C7E342F006E9180 /* MVVMxDemo.xcdatamodeld */,
+			);
+			path = LocalDB;
+			sourceTree = "<group>";
+		};
+		3E4449EA2C7E3D18006E9180 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				3E36F7862C7F82E500E970BF /* Model */,
+				3E36F7872C7F82EB00E970BF /* View */,
+				3E36F7882C7F82EF00E970BF /* ViewModel */,
+			);
+			path = Product;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +360,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E4449B42C7E342F006E9180 /* ViewController.swift in Sources */,
 				3E4449BA2C7E342F006E9180 /* MVVMxDemo.xcdatamodeld in Sources */,
+				3E4449F12C7E4039006E9180 /* APIManager.swift in Sources */,
+				3E36F78A2C7F830400E970BF /* Product.swift in Sources */,
 				3E4449B02C7E342F006E9180 /* AppDelegate.swift in Sources */,
 				3E4449B22C7E342F006E9180 /* SceneDelegate.swift in Sources */,
 			);
